@@ -1,0 +1,15 @@
+{
+  "provider": "Eastmoney public quote API",
+  "endpoint": "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+  "symbol": "000300",
+  "secid": "1.000300",
+  "frequency": "5m",
+  "adjusted": false,
+  "coverage_warning": "Rolling short public history; not a multi-year sample.",
+  "output_file": "csi300_5m.csv",
+  "rows": 1488,
+  "start_date": "2026-09-21T09:35:00",
+  "end_date": "2026-11-10T15:00:00",
+  "sha256": "d3595f72129278b767f144779b053b7a9d7c21244ee6c94ed26161d9393f6be8",
+  "retrieved_or_generated_utc": "2026-11-10T16:00:52.983771+00:00"
+}

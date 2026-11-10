@@ -1,0 +1,4 @@
+﻿comparison_block,model,benchmark,mean_loss_diff,dm_stat,dm_pvalue,n
+Static Ensemble,HAR-RV,Static Ensemble,0.2171325985803344,22.210099050969045,2.8014118415465963e-103,4090.0
+Static Ensemble,XGBoost,Static Ensemble,-0.1551757044688378,-18.326055282000592,3.69348484949125e-72,4090.0
+Static Ensemble,Dynamic Ensemble,Static Ensemble,-0.04108324605670778,-12.992807844885576,7.47586610241248e-38,4090.0

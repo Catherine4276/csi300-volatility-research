@@ -1,0 +1,70 @@
+data:
+  symbol: "000300"
+  secid: "1.000300"
+  start_date: "2005-01-01"
+  intraday_period: "5"
+  source: "Eastmoney public historical quote API"
+
+features:
+  vol_window: 252
+  regime_low_quantile: 0.25
+  regime_high_quantile: 0.75
+  regime_confirm_days: 3
+
+validation:
+  oos_start: "2010-01-04"
+  minimum_training_rows: 500
+  refit_every: 22
+  xgb_tune_every: 252
+  weight_window: 252
+  weight_minimum_rows: 30
+  weight_shrinkage: 0.20
+  enforce_regime_direction: true
+  xgb_weight_floor_normal: 0.50
+  xgb_weight_ceiling_high: 0.50
+
+xgboost:
+  random_state: 20261110
+  early_stopping_rounds: 30
+  validation_fraction: 0.15
+  parameter_grid:
+    - n_estimators: 180
+      max_depth: 2
+      learning_rate: 0.035
+      min_child_weight: 5
+      subsample: 0.85
+      colsample_bytree: 0.85
+      reg_lambda: 2.0
+    - n_estimators: 300
+      max_depth: 2
+      learning_rate: 0.025
+      min_child_weight: 8
+      subsample: 0.80
+      colsample_bytree: 0.80
+      reg_lambda: 3.0
+    - n_estimators: 240
+      max_depth: 3
+      learning_rate: 0.025
+      min_child_weight: 10
+      subsample: 0.80
+      colsample_bytree: 0.75
+      reg_lambda: 4.0
+
+events:
+  crisis_2015:
+    start: "2015-06-01"
+    end: "2015-09-30"
+    label: "2015年异常波动（事后诊断）"
+  pandemic_2020:
+    start: "2020-01-20"
+    end: "2020-04-30"
+    label: "2020年疫情冲击（事后诊断）"
+
+tests:
+  dm_max_lag: 22
+  mcs_bootstrap_draws: 2000
+  bootstrap_block_length: null
+  random_seed: 20261110
+  regime_low_quantiles: [0.20, 0.25, 0.30]
+  regime_high_quantiles: [0.70, 0.75, 0.80]
+

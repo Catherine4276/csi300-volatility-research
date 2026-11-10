@@ -1,0 +1,14 @@
+[project]
+name = "csi300-volatility-research"
+version = "0.1.0"
+description = "Leakage-audited CSI 300 volatility forecasting and regime-aware ensemble research system"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider --basetemp=.pytest_tmp"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+

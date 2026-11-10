@@ -1,0 +1,40 @@
+{
+  "forecast_origin": "2026-11-10T00:00:00",
+  "next_trading_target_expected": null,
+  "regime": 2,
+  "regime_label": "高波动",
+  "high_risk_alert": true,
+  "pred_har": 8.711126452892707e-05,
+  "pred_xgb": 5.687816155841574e-05,
+  "pred_dynamic": 7.19947130436714e-05,
+  "weight_xgb": 0.5,
+  "weight_har": 0.5,
+  "annualized_vol_har": 0.14816220388914852,
+  "annualized_vol_xgb": 0.11972174703336386,
+  "annualized_vol_dynamic": 0.1346947203382716,
+  "latest_close": 4059.11,
+  "har_parameters": {
+    "intercept": 2.2797531120210385e-05,
+    "rv_d": 0.18986745523492857,
+    "rv_w": 0.4462378577904673,
+    "rv_m": 0.22084652589064915
+  },
+  "xgboost_training": {
+    "model": "xgboost",
+    "parameters": {
+      "n_estimators": 300,
+      "max_depth": 2,
+      "learning_rate": 0.025,
+      "min_child_weight": 8,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 3.0
+    },
+    "cv_qlike": 0.3591372427208906,
+    "train_start": "2006-01-23T00:00:00",
+    "train_end": "2026-11-09T00:00:00",
+    "training_rows": 5050,
+    "fitted_at_utc": "2026-11-10T16:43:01.042442+00:00"
+  },
+  "training_rows": 5050
+}

@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "forecast_rows": 4090,
+  "forecast_start": "2010-01-04",
+  "forecast_end": "2026-11-09",
+  "strict_future_targets": true,
+  "training_origin_overlap_rows": 0,
+  "bounded_dynamic_weights": true,
+  "regime_direction_constraints": true,
+  "skill": {
+    "name": "quant-research",
+    "description": "Conduct auditable quantitative finance research on market data, especially return and volatility forecasting. Use for financial time-series analysis, leakage-safe backtests, HAR/ARCH/ML forecasting, regime analysis, forecast evaluation, and reproducible empirical reports; not for live trading or investment advice."
+  },
+  "run_id": "csi300-vol-20261110T164301Z",
+  "source_sha256": "2bb0de858f21e5bf751599147907c059fc11a90a29ca457c966bd3ad4135e6b8",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "statsmodels": "0.15.0",
+    "streamlit": "1.67.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "provider": "Derived from csi300_daily.csv and optional csi300_5m.csv",
+  "target": "next trading day Garman-Klass variance proxy",
+  "target_is_high_frequency_rv": false,
+  "feature_columns": [
+    "rv_d",
+    "rv_w",
+    "rv_m",
+    "rv_63",
+    "rv_acceleration",
+    "range_ratio",
+    "historical_vol_percentile",
+    "rv_w_percentile",
+    "log_return",
+    "return_5",
+    "return_22",
+    "volume_change",
+    "amount_change",
+    "volume_ratio_22",
+    "amount_ratio_22"
+  ],
+  "intraday_error": null,
+  "time_direction": "forecast_origin < target_date",
+  "output_file": "modeling_dataset.csv",
+  "rows": 5306,
+  "start_date": "2005-01-04T00:00:00",
+  "end_date": "2026-11-10T00:00:00",
+  "sha256": "8d18c2db1c06010496c810815843be2f8871f75b396bfdac2111e9e5ba879070",
+  "retrieved_or_generated_utc": "2026-11-10T16:00:53.208472+00:00"
+}

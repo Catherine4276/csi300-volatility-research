@@ -1,0 +1,112 @@
+{
+  "forecast_rows": 4090,
+  "forecast_start": "2010-01-04T00:00:00",
+  "forecast_end": "2026-11-09T00:00:00",
+  "run_id": "csi300-vol-20261110T164301Z",
+  "generated_at_utc": "2026-11-10T16:43:01.187261+00:00",
+  "source_sha256": "2bb0de858f21e5bf751599147907c059fc11a90a29ca457c966bd3ad4135e6b8",
+  "config_sha256": "d505fd6756c6c6f45159d310eccae91486af86a879f525e6d60b8e21deb51403",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "statsmodels": "0.15.0",
+    "streamlit": "1.67.0"
+  },
+  "random_seed": 20261110,
+  "command": "python scripts/prepare_data.py && python -m pytest && python scripts/run_research.py",
+  "config": {
+    "data": {
+      "symbol": "000300",
+      "secid": "1.000300",
+      "start_date": "2005-01-01",
+      "intraday_period": "5",
+      "source": "Eastmoney public historical quote API"
+    },
+    "features": {
+      "vol_window": 252,
+      "regime_low_quantile": 0.25,
+      "regime_high_quantile": 0.75,
+      "regime_confirm_days": 3
+    },
+    "validation": {
+      "oos_start": "2010-01-04",
+      "minimum_training_rows": 500,
+      "refit_every": 22,
+      "xgb_tune_every": 252,
+      "weight_window": 252,
+      "weight_minimum_rows": 30,
+      "weight_shrinkage": 0.2,
+      "enforce_regime_direction": true,
+      "xgb_weight_floor_normal": 0.5,
+      "xgb_weight_ceiling_high": 0.5
+    },
+    "xgboost": {
+      "random_state": 20261110,
+      "early_stopping_rounds": 30,
+      "validation_fraction": 0.15,
+      "parameter_grid": [
+        {
+          "n_estimators": 180,
+          "max_depth": 2,
+          "learning_rate": 0.035,
+          "min_child_weight": 5,
+          "subsample": 0.85,
+          "colsample_bytree": 0.85,
+          "reg_lambda": 2.0
+        },
+        {
+          "n_estimators": 300,
+          "max_depth": 2,
+          "learning_rate": 0.025,
+          "min_child_weight": 8,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_lambda": 3.0
+        },
+        {
+          "n_estimators": 240,
+          "max_depth": 3,
+          "learning_rate": 0.025,
+          "min_child_weight": 10,
+          "subsample": 0.8,
+          "colsample_bytree": 0.75,
+          "reg_lambda": 4.0
+        }
+      ]
+    },
+    "events": {
+      "crisis_2015": {
+        "start": "2015-06-01",
+        "end": "2015-09-30",
+        "label": "2015年异常波动（事后诊断）"
+      },
+      "pandemic_2020": {
+        "start": "2020-01-20",
+        "end": "2020-04-30",
+        "label": "2020年疫情冲击（事后诊断）"
+      }
+    },
+    "tests": {
+      "dm_max_lag": 22,
+      "mcs_bootstrap_draws": 2000,
+      "bootstrap_block_length": null,
+      "random_seed": 20261110,
+      "regime_low_quantiles": [
+        0.2,
+        0.25,
+        0.3
+      ],
+      "regime_high_quantiles": [
+        0.7,
+        0.75,
+        0.8
+      ]
+    }
+  },
+  "model_refits": 186,
+  "xgb_tuning_events": 16,
+  "target_definition": "next-trading-day Garman-Klass OHLC variance proxy"
+}

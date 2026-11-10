@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or its research design, cite this repository."
+title: "CSI 300 AI Volatility Forecasting and Regime-Aware Ensemble Research"
+type: software
+authors:
+  - name: "Catherine4276"
+version: 0.1.0
+date-released: 2026-11-11
+license: MIT
+repository-code: "https://github.com/Catherine4276/csi300-volatility-research"
+keywords:
+  - quantitative-finance
+  - volatility-forecasting
+  - HAR-RV
+  - XGBoost
+  - regime-detection
+  - streamlit
+

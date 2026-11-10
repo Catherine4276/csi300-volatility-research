@@ -1,0 +1,4 @@
+﻿comparison_block,model,benchmark,gw_stat,gw_pvalue,gw_df,n
+Static Ensemble,HAR-RV,Static Ensemble,584.9320122671022,1.8614900699858335e-126,3.0,4090.0
+Static Ensemble,XGBoost,Static Ensemble,385.7347602383101,2.7224948573775697e-83,3.0,4090.0
+Static Ensemble,Dynamic Ensemble,Static Ensemble,177.7021475287015,2.7648972481157367e-38,3.0,4090.0

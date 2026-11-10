@@ -1,0 +1,13 @@
+.venv
+.git
+.github
+.pytest_cache
+__pycache__
+**/__pycache__
+*.pyc
+*.zip
+data/raw/*.csv
+data/processed/*.csv
+models/*.joblib
+.streamlit/secrets.toml
+

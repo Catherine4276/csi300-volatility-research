@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a research, evaluation, or dashboard improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Research or user problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation design
+      description: Explain how the change avoids leakage and can be evaluated.
+    validations:
+      required: true
+
