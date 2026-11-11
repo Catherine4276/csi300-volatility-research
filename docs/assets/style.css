@@ -171,6 +171,20 @@ figure img {
 }
 figcaption { margin-top: 8px; font-size: 12px; }
 
+.interactive-figure {
+  min-height: 520px;
+}
+
+.interactive-figure .plotly-graph-div {
+  width: 100% !important;
+  min-height: 520px;
+}
+
+.interactive-figure .modebar {
+  top: 8px !important;
+  right: 8px !important;
+}
+
 .table-wrap { overflow: auto; }
 
 .data-table {

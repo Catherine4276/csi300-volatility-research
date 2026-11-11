@@ -8,12 +8,24 @@ import shutil
 from pathlib import Path
 
 import pandas as pd
+import plotly
+import plotly.graph_objects as go
+import plotly.io as pio
+from plotly.subplots import make_subplots
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DOCS_ROOT = PROJECT_ROOT / "docs"
 ASSETS_ROOT = DOCS_ROOT / "assets"
 REPOSITORY_URL = "https://github.com/Catherine4276/csi300-volatility-research"
+COLORS = {
+    "actual": "#8da9c4",
+    "har": "#f0b35a",
+    "xgb": "#9d8df1",
+    "static": "#8b7bd8",
+    "dynamic": "#20c6b7",
+    "close": "#62d7ff",
+}
 
 
 def _read_csv(relative_path: str) -> pd.DataFrame:
@@ -200,6 +212,162 @@ def _build_sensitivity() -> str:
     )
 
 
+def _chart_html(figure: go.Figure, div_id: str) -> str:
+    """Render a self-contained chart fragment with local Plotly assets."""
+
+    figure.update_layout(
+        template="plotly_dark",
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(8,20,34,.72)",
+        font={"family": "Microsoft YaHei, Noto Sans SC, sans-serif", "color": "#dbe8f5"},
+        margin={"l": 56, "r": 28, "t": 62, "b": 48},
+        legend={"orientation": "h", "y": 1.08, "x": 0},
+        hovermode="x unified",
+        hoverlabel={
+            "bgcolor": "#0b1d31",
+            "bordercolor": "#315a78",
+            "font": {"color": "#e8f5ff", "size": 12},
+        },
+        dragmode="zoom",
+    )
+    figure.update_xaxes(
+        gridcolor="rgba(75,115,145,.18)",
+        showspikes=True,
+        hoverformat="%Y-%m-%d",
+    )
+    figure.update_yaxes(gridcolor="rgba(75,115,145,.18)")
+    return pio.to_html(
+        figure,
+        include_plotlyjs=False,
+        full_html=False,
+        config={
+            "displaylogo": False,
+            "responsive": True,
+            "scrollZoom": True,
+            "modeBarButtonsToRemove": ["lasso2d", "select2d"],
+        },
+        default_width="100%",
+        default_height="560px",
+        div_id=div_id,
+    )
+
+
+def _build_interactive_charts() -> tuple[str, str, str]:
+    forecasts = pd.read_csv(
+        PROJECT_ROOT / "reports" / "forecasts.csv",
+        parse_dates=["forecast_origin", "target_date"],
+    )
+    x = forecasts["forecast_origin"].dt.strftime("%Y-%m-%d")
+
+    forecast_figure = make_subplots(specs=[[{"secondary_y": True}]])
+    series = (
+        ("actual_annualized_vol", "次日已实现代理", COLORS["actual"]),
+        ("annualized_vol_har", "HAR-RV 预测", COLORS["har"]),
+        ("annualized_vol_xgb", "XGBoost 预测", COLORS["xgb"]),
+        ("annualized_vol_dynamic", "动态组合预测", COLORS["dynamic"]),
+    )
+    for column, label, color in series:
+        forecast_figure.add_trace(
+            go.Scattergl(
+                x=x,
+                y=forecasts[column] * 100.0,
+                mode="lines",
+                name=label,
+                line={"color": color, "width": 1.2},
+                hovertemplate=f"{label}: %{{y:.2f}}%<extra></extra>",
+            ),
+            secondary_y=False,
+        )
+    forecast_figure.add_trace(
+        go.Scattergl(
+            x=x,
+            y=forecasts["close"],
+            mode="lines",
+            name="指数收盘价",
+            line={"color": COLORS["close"], "width": 1, "dash": "dot"},
+            opacity=0.6,
+            hovertemplate="指数收盘价: %{y:.2f}<extra></extra>",
+        ),
+        secondary_y=True,
+    )
+    forecast_figure.update_layout(title="逐日样本外预测与次日已实现波动率")
+    forecast_figure.update_yaxes(title_text="年化波动率 / %", secondary_y=False)
+    forecast_figure.update_yaxes(
+        title_text="指数收盘价",
+        secondary_y=True,
+        showgrid=False,
+    )
+    forecast_html = _chart_html(forecast_figure, "interactive-forecast-chart")
+
+    cumulative_figure = go.Figure()
+    for column, label, color in (
+        ("qlike_har", "HAR-RV", COLORS["har"]),
+        ("qlike_xgb", "XGBoost", COLORS["xgb"]),
+        ("qlike_static", "固定组合", COLORS["static"]),
+        ("qlike_dynamic", "动态组合", COLORS["dynamic"]),
+    ):
+        cumulative_figure.add_trace(
+            go.Scattergl(
+                x=x,
+                y=forecasts[column].cumsum(),
+                mode="lines",
+                name=label,
+                line={"color": color, "width": 1.5},
+                hovertemplate=f"{label} 累计 QLIKE: %{{y:.2f}}<extra></extra>",
+            )
+        )
+    cumulative_figure.update_layout(title="累计样本外 QLIKE（越低越好）")
+    cumulative_figure.update_yaxes(title_text="累计 QLIKE")
+    cumulative_html = _chart_html(cumulative_figure, "interactive-qlike-chart")
+
+    weight_figure = make_subplots(
+        rows=2,
+        cols=1,
+        shared_xaxes=True,
+        vertical_spacing=0.08,
+        row_heights=[0.68, 0.32],
+    )
+    weight_figure.add_trace(
+        go.Scattergl(
+            x=x,
+            y=forecasts["weight_xgb"],
+            mode="lines",
+            name="XGBoost 权重",
+            line={"color": COLORS["close"], "width": 1.4},
+            fill="tozeroy",
+            fillcolor="rgba(98,215,255,.08)",
+            hovertemplate="XGBoost 权重: %{y:.1%}<extra></extra>",
+        ),
+        row=1,
+        col=1,
+    )
+    weight_figure.add_trace(
+        go.Scattergl(
+            x=x,
+            y=forecasts["regime"],
+            mode="lines",
+            name="市场状态",
+            line={"color": COLORS["har"], "width": 1.2},
+            customdata=forecasts["regime_label"],
+            hovertemplate="市场状态: %{customdata}<extra></extra>",
+        ),
+        row=2,
+        col=1,
+    )
+    weight_figure.update_layout(title="动态权重与市场状态")
+    weight_figure.update_yaxes(title_text="XGBoost 权重", range=[0, 1], row=1, col=1)
+    weight_figure.update_yaxes(
+        title_text="市场状态",
+        tickmode="array",
+        tickvals=[0, 1, 2],
+        ticktext=["低波动", "正常波动", "高波动"],
+        row=2,
+        col=1,
+    )
+    weight_html = _chart_html(weight_figure, "interactive-regime-chart")
+    return cumulative_html, forecast_html, weight_html
+
+
 def _card(label: str, value: str, note: str) -> str:
     return (
         '<article class="metric-card">'
@@ -225,6 +393,11 @@ def build() -> Path:
         PROJECT_ROOT / "reports" / "forecasts.csv",
         ASSETS_ROOT / "forecasts.csv",
     )
+    shutil.copy2(
+        Path(plotly.__file__).resolve().parent / "package_data" / "plotly.min.js",
+        ASSETS_ROOT / "plotly.min.js",
+    )
+    cumulative_chart, forecast_chart, weight_chart = _build_interactive_charts()
 
     latest = json.loads(
         (PROJECT_ROOT / "reports" / "latest_forecast.json").read_text(encoding="utf-8")
@@ -264,6 +437,7 @@ def build() -> Path:
   <title>沪深300 AI 波动率研究仪表盘</title>
   <meta name="description" content="沪深300 HAR-RV、XGBoost、市场状态与动态组合的严格样本外波动率研究。">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/plotly.min.js"></script>
 </head>
 <body>
   <header class="hero">
@@ -272,7 +446,7 @@ def build() -> Path:
     <p>严格滚动样本外 · HAR-RV / XGBoost · 市场状态识别 · 统计检验</p>
     <div class="hero-meta">
       信息截至 {html.escape(latest["forecast_origin"][:10])} ·
-      静态公开归档，不依赖本机服务
+      静态公开归档，不依赖本机服务 · 电脑悬停 / 手机点按查看具体数据
     </div>
   </header>
 
@@ -302,26 +476,26 @@ def build() -> Path:
         <h2>整体样本外比较</h2>
         <p class="lead">所有指标由 2010-01-04 至 2026-11-09 的逐日样本外预测计算。</p>
         {_build_metrics()}
-        <figure>
-          <img src="assets/cumulative_qlike.png" alt="四种模型的累计样本外QLIKE损失曲线">
-          <figcaption>累计 QLIKE 越低越好。XGBoost 在完整样本中保持最低损失。</figcaption>
+        <figure class="interactive-figure" role="img" aria-label="四种模型的交互式累计样本外QLIKE损失曲线">
+          {cumulative_chart}
+          <figcaption>累计 QLIKE 越低越好。将鼠标移到图表上可查看具体日期和四种模型的累计损失。</figcaption>
         </figure>
       </section>
 
       <section class="tab-panel panel-forecast">
         <h2>预测与实际波动</h2>
-        <figure>
-          <img src="assets/forecast_vs_realized.png" alt="沪深300实际波动率代理与动态组合预测对比">
-          <figcaption>目标为下一交易日 Garman–Klass 日度 OHLC 方差代理的年化展示。</figcaption>
+        <figure class="interactive-figure" role="img" aria-label="沪深300收盘价、实际波动率与三种模型预测的交互图">
+          {forecast_chart}
+          <figcaption>悬停日期可同时查看指数收盘价、次日已实现波动率和三种模型预测；手机端点按图表查看。</figcaption>
         </figure>
         <a class="button" href="assets/forecasts.csv" download>下载完整 4,090 条样本外预测 CSV</a>
       </section>
 
       <section class="tab-panel panel-regime">
         <h2>状态识别与动态权重</h2>
-        <figure>
-          <img src="assets/dynamic_weight.png" alt="动态XGBoost权重及高波动状态区间">
-          <figcaption>阈值只使用先前 252 个交易日，连续 3 日确认后才切换状态。</figcaption>
+        <figure class="interactive-figure" role="img" aria-label="动态XGBoost权重与市场状态的交互图">
+          {weight_chart}
+          <figcaption>悬停日期可查看动态 XGBoost 权重和对应市场状态。阈值只使用先前 252 个交易日，连续 3 日确认后才切换。</figcaption>
         </figure>
         {_build_regime()}
       </section>
@@ -358,6 +532,21 @@ def build() -> Path:
   <footer>
     沪深300 AI 波动率研究 · 静态公开仪表盘 · 研究信号不构成投资建议
   </footer>
+  <script>
+    (() => {{
+      const resizeCharts = () => {{
+        window.setTimeout(() => {{
+          document.querySelectorAll(".js-plotly-plot").forEach((chart) => {{
+            if (window.Plotly) Plotly.Plots.resize(chart);
+          }});
+        }}, 80);
+      }};
+      document.querySelectorAll(".tab-labels label").forEach((label) => {{
+        label.addEventListener("click", resizeCharts);
+      }});
+      window.addEventListener("resize", resizeCharts);
+    }})();
+  </script>
 </body>
 </html>
 """
