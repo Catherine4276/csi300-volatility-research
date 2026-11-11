@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>沪深300 AI 波动率研究仪表盘</title>
+  <meta name="description" content="沪深300 HAR-RV、XGBoost、市场状态与动态组合的严格样本外波动率研究。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">QUANTITATIVE RESEARCH / CSI 300</div>
+    <h1>波动率预测失效诊断与动态组合防御</h1>
+    <p>严格滚动样本外 · HAR-RV / XGBoost · 市场状态识别 · 统计检验</p>
+    <div class="hero-meta">
+      信息截至 2026-11-10 ·
+      静态公开归档，不依赖本机服务
+    </div>
+  </header>
+
+  <main>
+    <section class="kpi-grid" aria-label="核心指标"><article class="metric-card"><div class="metric-label">下一交易日动态波动率</div><div class="metric-value">13.47%</div><div class="metric-note">年化口径</div></article><article class="metric-card"><div class="metric-label">XGBoost 动态权重</div><div class="metric-value">50.0%</div><div class="metric-note">由既往样本外损失推导</div></article><article class="metric-card"><div class="metric-label">当前市场状态</div><div class="metric-value">高波动</div><div class="metric-note">2026-11-10</div></article><article class="metric-card"><div class="metric-label">动态组合整体 QLIKE</div><div class="metric-value">0.43724</div><div class="metric-note">方差预测损失</div></article></section>
+    <div class="risk-high"><strong>风险状态：高波动</strong>
+      · 高波动状态或滚动阈值已触发；该信号只用于研究，不是交易建议。
+    </div>
+
+    <div class="tabs">
+      <input type="radio" name="tab" id="tab-overview" checked>
+      <input type="radio" name="tab" id="tab-forecast">
+      <input type="radio" name="tab" id="tab-regime">
+      <input type="radio" name="tab" id="tab-tests">
+      <input type="radio" name="tab" id="tab-events">
+      <input type="radio" name="tab" id="tab-method">
+      <nav class="tab-labels" aria-label="研究页面">
+        <label for="tab-overview">总览</label>
+        <label for="tab-forecast">预测诊断</label>
+        <label for="tab-regime">状态与权重</label>
+        <label for="tab-tests">统计检验</label>
+        <label for="tab-events">事件与稳健性</label>
+        <label for="tab-method">方法与数据</label>
+      </nav>
+
+      <section class="tab-panel panel-overview">
+        <h2>整体样本外比较</h2>
+        <p class="lead">所有指标由 2010-01-04 至 2026-11-09 的逐日样本外预测计算。</p>
+        <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>模型</th>
+      <th>样本数</th>
+      <th>MAE</th>
+      <th>RMSE</th>
+      <th>QLIKE</th>
+      <th>R² OOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HAR-RV</td>
+      <td>4090</td>
+      <td>8.306e-05</td>
+      <td>1.814e-04</td>
+      <td>0.69545</td>
+      <td>0.4120</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>4090</td>
+      <td>6.751e-05</td>
+      <td>1.827e-04</td>
+      <td>0.32314</td>
+      <td>0.4039</td>
+    </tr>
+    <tr>
+      <td>固定组合</td>
+      <td>4090</td>
+      <td>7.237e-05</td>
+      <td>1.773e-04</td>
+      <td>0.47832</td>
+      <td>0.4381</td>
+    </tr>
+    <tr>
+      <td>动态组合</td>
+      <td>4090</td>
+      <td>7.108e-05</td>
+      <td>1.773e-04</td>
+      <td>0.43724</td>
+      <td>0.4386</td>
+    </tr>
+  </tbody>
+</table>
+        <figure>
+          <img src="assets/cumulative_qlike.png" alt="四种模型的累计样本外QLIKE损失曲线">
+          <figcaption>累计 QLIKE 越低越好。XGBoost 在完整样本中保持最低损失。</figcaption>
+        </figure>
+      </section>
+
+      <section class="tab-panel panel-forecast">
+        <h2>预测与实际波动</h2>
+        <figure>
+          <img src="assets/forecast_vs_realized.png" alt="沪深300实际波动率代理与动态组合预测对比">
+          <figcaption>目标为下一交易日 Garman–Klass 日度 OHLC 方差代理的年化展示。</figcaption>
+        </figure>
+        <a class="button" href="assets/forecasts.csv" download>下载完整 4,090 条样本外预测 CSV</a>
+      </section>
+
+      <section class="tab-panel panel-regime">
+        <h2>状态识别与动态权重</h2>
+        <figure>
+          <img src="assets/dynamic_weight.png" alt="动态XGBoost权重及高波动状态区间">
+          <figcaption>阈值只使用先前 252 个交易日，连续 3 日确认后才切换状态。</figcaption>
+        </figure>
+        <table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>市场状态</th>
+      <th>交易日数</th>
+      <th>首次出现</th>
+      <th>最近出现</th>
+      <th>平均5日RV</th>
+      <th>该状态进入次数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>低波动</td>
+      <td>1385</td>
+      <td>2006-02-16</td>
+      <td>2026-10-12</td>
+      <td>7.305021e-05</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <td>正常波动</td>
+      <td>2552</td>
+      <td>2005-01-04</td>
+      <td>2026-11-05</td>
+      <td>1.214212e-04</td>
+      <td>202</td>
+    </tr>
+    <tr>
+      <td>高波动</td>
+      <td>1369</td>
+      <td>2006-04-26</td>
+      <td>2026-11-10</td>
+      <td>3.075403e-04</td>
+      <td>109</td>
+    </tr>
+  </tbody>
+</table>
+      </section>
+
+      <section class="tab-panel panel-tests">
+        <h2>统计检验</h2>
+        <h3>Diebold–Mariano：相对固定组合</h3><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>模型</th>
+      <th>基准</th>
+      <th>平均损失差</th>
+      <th>DM 统计量</th>
+      <th>p 值</th>
+      <th>样本数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HAR-RV</td>
+      <td>Static Ensemble</td>
+      <td>0.21713</td>
+      <td>22.210</td>
+      <td>2.801e-103</td>
+      <td>4090.0</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>Static Ensemble</td>
+      <td>-0.15518</td>
+      <td>-18.326</td>
+      <td>3.693e-72</td>
+      <td>4090.0</td>
+    </tr>
+    <tr>
+      <td>动态组合</td>
+      <td>Static Ensemble</td>
+      <td>-0.04108</td>
+      <td>-12.993</td>
+      <td>7.476e-38</td>
+      <td>4090.0</td>
+    </tr>
+  </tbody>
+</table><h3>近似 Model Confidence Set</h3><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>模型</th>
+      <th>平均 QLIKE</th>
+      <th>p 值</th>
+      <th>保留</th>
+      <th>淘汰顺序</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XGBoost</td>
+      <td>0.32314</td>
+      <td>1</td>
+      <td>True</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>Dynamic Ensemble</td>
+      <td>0.43724</td>
+      <td>0.0004998</td>
+      <td>False</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Static Ensemble</td>
+      <td>0.47832</td>
+      <td>0.0004998</td>
+      <td>False</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>HAR-RV</td>
+      <td>0.69545</td>
+      <td>0.0004998</td>
+      <td>False</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+      </section>
+
+      <section class="tab-panel panel-events">
+        <h2>事件复盘与敏感性</h2>
+        <h3>2015 年异常波动</h3><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>模型</th>
+      <th>样本数</th>
+      <th>MAE</th>
+      <th>RMSE</th>
+      <th>QLIKE</th>
+      <th>R² OOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HAR-RV</td>
+      <td>85</td>
+      <td>5.567e-04</td>
+      <td>8.218e-04</td>
+      <td>0.53191</td>
+      <td>0.2915</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>85</td>
+      <td>5.195e-04</td>
+      <td>8.592e-04</td>
+      <td>0.30373</td>
+      <td>0.2255</td>
+    </tr>
+    <tr>
+      <td>固定组合</td>
+      <td>85</td>
+      <td>5.010e-04</td>
+      <td>8.110e-04</td>
+      <td>0.37523</td>
+      <td>0.3099</td>
+    </tr>
+    <tr>
+      <td>动态组合</td>
+      <td>85</td>
+      <td>4.998e-04</td>
+      <td>8.108e-04</td>
+      <td>0.37009</td>
+      <td>0.3103</td>
+    </tr>
+  </tbody>
+</table><h3>2020 年疫情冲击</h3><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>模型</th>
+      <th>样本数</th>
+      <th>MAE</th>
+      <th>RMSE</th>
+      <th>QLIKE</th>
+      <th>R² OOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HAR-RV</td>
+      <td>67</td>
+      <td>1.029e-04</td>
+      <td>1.580e-04</td>
+      <td>0.74925</td>
+      <td>0.1891</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>67</td>
+      <td>9.277e-05</td>
+      <td>1.538e-04</td>
+      <td>0.47027</td>
+      <td>0.2317</td>
+    </tr>
+    <tr>
+      <td>固定组合</td>
+      <td>67</td>
+      <td>9.638e-05</td>
+      <td>1.535e-04</td>
+      <td>0.58496</td>
+      <td>0.2350</td>
+    </tr>
+    <tr>
+      <td>动态组合</td>
+      <td>67</td>
+      <td>9.620e-05</td>
+      <td>1.539e-04</td>
+      <td>0.56490</td>
+      <td>0.2305</td>
+    </tr>
+  </tbody>
+</table>
+        <h3>固定权重敏感性</h3><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>XGBoost 权重</th>
+      <th>QLIKE</th>
+      <th>RMSE</th>
+      <th>R² OOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.00</td>
+      <td>0.69545</td>
+      <td>1.814e-04</td>
+      <td>0.4120</td>
+    </tr>
+    <tr>
+      <td>0.05</td>
+      <td>0.67181</td>
+      <td>1.806e-04</td>
+      <td>0.4173</td>
+    </tr>
+    <tr>
+      <td>0.10</td>
+      <td>0.64855</td>
+      <td>1.798e-04</td>
+      <td>0.4221</td>
+    </tr>
+    <tr>
+      <td>0.15</td>
+      <td>0.62567</td>
+      <td>1.792e-04</td>
+      <td>0.4262</td>
+    </tr>
+    <tr>
+      <td>0.20</td>
+      <td>0.60321</td>
+      <td>1.787e-04</td>
+      <td>0.4297</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>0.58119</td>
+      <td>1.782e-04</td>
+      <td>0.4326</td>
+    </tr>
+    <tr>
+      <td>0.30</td>
+      <td>0.55961</td>
+      <td>1.778e-04</td>
+      <td>0.4349</td>
+    </tr>
+    <tr>
+      <td>0.35</td>
+      <td>0.53851</td>
+      <td>1.776e-04</td>
+      <td>0.4366</td>
+    </tr>
+    <tr>
+      <td>0.40</td>
+      <td>0.51791</td>
+      <td>1.774e-04</td>
+      <td>0.4377</td>
+    </tr>
+    <tr>
+      <td>0.45</td>
+      <td>0.49783</td>
+      <td>1.773e-04</td>
+      <td>0.4382</td>
+    </tr>
+    <tr>
+      <td>0.50</td>
+      <td>0.47832</td>
+      <td>1.773e-04</td>
+      <td>0.4381</td>
+    </tr>
+    <tr>
+      <td>0.55</td>
+      <td>0.45939</td>
+      <td>1.774e-04</td>
+      <td>0.4374</td>
+    </tr>
+    <tr>
+      <td>0.60</td>
+      <td>0.44110</td>
+      <td>1.776e-04</td>
+      <td>0.4361</td>
+    </tr>
+    <tr>
+      <td>0.65</td>
+      <td>0.42346</td>
+      <td>1.779e-04</td>
+      <td>0.4342</td>
+    </tr>
+    <tr>
+      <td>0.70</td>
+      <td>0.40654</td>
+      <td>1.783e-04</td>
+      <td>0.4317</td>
+    </tr>
+    <tr>
+      <td>0.75</td>
+      <td>0.39038</td>
+      <td>1.788e-04</td>
+      <td>0.4285</td>
+    </tr>
+    <tr>
+      <td>0.80</td>
+      <td>0.37503</td>
+      <td>1.794e-04</td>
+      <td>0.4248</td>
+    </tr>
+    <tr>
+      <td>0.85</td>
+      <td>0.36055</td>
+      <td>1.801e-04</td>
+      <td>0.4205</td>
+    </tr>
+    <tr>
+      <td>0.90</td>
+      <td>0.34703</td>
+      <td>1.809e-04</td>
+      <td>0.4155</td>
+    </tr>
+    <tr>
+      <td>0.95</td>
+      <td>0.33453</td>
+      <td>1.817e-04</td>
+      <td>0.4100</td>
+    </tr>
+    <tr>
+      <td>1.00</td>
+      <td>0.32314</td>
+      <td>1.827e-04</td>
+      <td>0.4039</td>
+    </tr>
+  </tbody>
+</table><h3>市场状态阈值敏感性</h3><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>低状态分位</th>
+      <th>高状态分位</th>
+      <th>高状态占比</th>
+      <th>切换次数</th>
+      <th>QLIKE</th>
+      <th>R² OOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.20</td>
+      <td>0.70</td>
+      <td>31.20%</td>
+      <td>404</td>
+      <td>0.43981</td>
+      <td>0.4385</td>
+    </tr>
+    <tr>
+      <td>0.20</td>
+      <td>0.75</td>
+      <td>25.65%</td>
+      <td>400</td>
+      <td>0.43743</td>
+      <td>0.4385</td>
+    </tr>
+    <tr>
+      <td>0.20</td>
+      <td>0.80</td>
+      <td>21.08%</td>
+      <td>368</td>
+      <td>0.43528</td>
+      <td>0.4389</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>0.70</td>
+      <td>31.71%</td>
+      <td>408</td>
+      <td>0.43982</td>
+      <td>0.4385</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>0.75</td>
+      <td>25.89%</td>
+      <td>411</td>
+      <td>0.43724</td>
+      <td>0.4386</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>0.80</td>
+      <td>21.37%</td>
+      <td>380</td>
+      <td>0.43515</td>
+      <td>0.4389</td>
+    </tr>
+    <tr>
+      <td>0.30</td>
+      <td>0.70</td>
+      <td>31.56%</td>
+      <td>418</td>
+      <td>0.43983</td>
+      <td>0.4385</td>
+    </tr>
+    <tr>
+      <td>0.30</td>
+      <td>0.75</td>
+      <td>25.92%</td>
+      <td>423</td>
+      <td>0.43731</td>
+      <td>0.4386</td>
+    </tr>
+    <tr>
+      <td>0.30</td>
+      <td>0.80</td>
+      <td>21.37%</td>
+      <td>394</td>
+      <td>0.43527</td>
+      <td>0.4389</td>
+    </tr>
+  </tbody>
+</table>
+      </section>
+
+      <section class="tab-panel panel-method">
+        <h2>研究口径与限制</h2>
+        <ul>
+          <li>预测目标：下一交易日 Garman–Klass 日度方差代理。</li>
+          <li>模型每 22 个交易日重训，XGBoost 每约 252 个样本外交易日重新调参。</li>
+          <li>动态权重只读取已经实现的既往样本外损失。</li>
+          <li>公开 5 分钟接口只有近期滚动历史，长期实验没有将其冒充高频 RV。</li>
+          <li>波动率预测不是指数涨跌预测，也不构成投资建议。</li>
+        </ul>
+        <p>
+          <a class="button secondary" href="https://github.com/Catherine4276/csi300-volatility-research">查看 GitHub 开源仓库</a>
+          <a class="button secondary" href="https://github.com/Catherine4276/csi300-volatility-research/blob/main/reports/research_report.md">阅读完整研究报告</a>
+          <a class="button secondary" href="https://github.com/Catherine4276/csi300-volatility-research/blob/main/data/README.md">数据来源与许可边界</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    沪深300 AI 波动率研究 · 静态公开仪表盘 · 研究信号不构成投资建议
+  </footer>
+</body>
+</html>

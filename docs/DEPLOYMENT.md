@@ -38,6 +38,29 @@ immediately. The app does not need raw source data or secrets.
 
 If the app is updated on GitHub, Streamlit Cloud can redeploy automatically.
 
+### Static GitHub Pages mirror
+
+This repository also builds a permanent static dashboard that does not require
+a local computer or Streamlit server:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\build_static_site.py
+git add docs
+git commit -m "Update static research dashboard"
+git push
+```
+
+In the GitHub repository, open **Settings → Pages**, choose **Deploy from a
+branch**, select `main` and `/docs`, then save. The project URL will be:
+
+```text
+https://YOUR_NAME.github.io/csi300-volatility-research/
+```
+
+The static mirror contains the verified charts, metrics, statistical tests,
+event analysis, methodology, and downloadable forecasts. It works after the
+authoring computer is powered off.
+
 ## 3. Deploy with Docker
 
 ```powershell

@@ -39,6 +39,10 @@ def main() -> None:
         PROJECT_ROOT / "reports" / "research_report.md",
         PROJECT_ROOT / "experiments" / "run_metadata.json",
         PROJECT_ROOT / "dashboard" / "app.py",
+        PROJECT_ROOT / "streamlit_app.py",
+        PROJECT_ROOT / "docs" / "index.html",
+        PROJECT_ROOT / "docs" / "assets" / "style.css",
+        PROJECT_ROOT / "docs" / "assets" / "forecasts.csv",
     ]
     missing = [str(path.relative_to(PROJECT_ROOT)) for path in required if not path.exists()]
     if missing:
@@ -80,6 +84,7 @@ def main() -> None:
         "training_origin_overlap_rows": 0,
         "bounded_dynamic_weights": True,
         "regime_direction_constraints": True,
+        "static_dashboard": "docs/index.html",
         "skill": skill_metadata,
         "run_id": run_metadata.get("run_id"),
         "source_sha256": run_metadata.get("source_sha256"),

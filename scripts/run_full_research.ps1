@@ -17,6 +17,7 @@ if (-not (Test-Path -LiteralPath $VenvPython)) {
 & $VenvPython scripts\prepare_data.py
 & $VenvPython -m pytest
 & $VenvPython scripts\run_research.py
+& $VenvPython scripts\build_static_site.py
 & $VenvPython scripts\verify_project.py
 
 Write-Host ""

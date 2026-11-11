@@ -1,5 +1,11 @@
 # 沪深300 AI 波动率预测研究系统
 
+永久公开仪表盘：
+<https://catherine4276.github.io/csi300-volatility-research/>
+
+开源代码：
+<https://github.com/Catherine4276/csi300-volatility-research>
+
 这是一个可运行、可复现、按真实时间顺序评估的量化金融研究项目：
 
 > 基于市场状态识别的 AI 波动率预测失效诊断与动态组合防御研究
@@ -105,10 +111,17 @@ run_research.cmd
 - GitHub 与 Streamlit Community Cloud 部署步骤：
   [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)；
 - GitHub Actions 自动测试：`.github/workflows/tests.yml`。
+- 永久静态公网镜像：GitHub Pages，使用 `docs/index.html`。
 
 `streamlit_app.py` 是公网部署入口。公开 Git 仓库不会提交供应商原始 CSV；
 下载脚本、manifest、报告和样本外预测足以支持复现与仪表盘展示。数据权利和
 再分发边界见 [data/README.md](data/README.md)。
+
+构建并更新无需本机运行的静态页面：
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\build_static_site.py
+```
 
 ## 项目结构
 

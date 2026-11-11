@@ -7,6 +7,7 @@
   "training_origin_overlap_rows": 0,
   "bounded_dynamic_weights": true,
   "regime_direction_constraints": true,
+  "static_dashboard": "docs/index.html",
   "skill": {
     "name": "quant-research",
     "description": "Conduct auditable quantitative finance research on market data, especially return and volatility forecasting. Use for financial time-series analysis, leakage-safe backtests, HAR/ARCH/ML forecasting, regime analysis, forecast evaluation, and reproducible empirical reports; not for live trading or investment advice."
