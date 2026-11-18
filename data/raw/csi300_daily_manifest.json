@@ -7,9 +7,9 @@
   "adjusted": false,
   "purpose": "long-history baseline OHLCV",
   "output_file": "csi300_daily.csv",
-  "rows": 5306,
+  "rows": 5312,
   "start_date": "2005-01-04T00:00:00",
-  "end_date": "2026-11-10T00:00:00",
-  "sha256": "a6ab06f75527f925cf7a09aff9f94e62ff7f6d38eab0bea9a14715194f6493de",
-  "retrieved_or_generated_utc": "2026-11-10T16:00:52.617896+00:00"
+  "end_date": "2026-11-18T00:00:00",
+  "sha256": "278d53a3da7679dc8b46f2c30defb4ea3397aefafbf17baee3ba7220bc3f8e58",
+  "retrieved_or_generated_utc": "2026-11-18T14:01:03.102231+00:00"
 }

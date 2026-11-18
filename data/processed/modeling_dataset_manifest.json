@@ -22,9 +22,9 @@
   "intraday_error": null,
   "time_direction": "forecast_origin < target_date",
   "output_file": "modeling_dataset.csv",
-  "rows": 5306,
+  "rows": 5312,
   "start_date": "2005-01-04T00:00:00",
-  "end_date": "2026-11-10T00:00:00",
-  "sha256": "8d18c2db1c06010496c810815843be2f8871f75b396bfdac2111e9e5ba879070",
-  "retrieved_or_generated_utc": "2026-11-10T16:00:53.208472+00:00"
+  "end_date": "2026-11-18T00:00:00",
+  "sha256": "a3fca59067ec44a4078b9968e6f6bf33abee22b05b15b0408e3404a422fb846e",
+  "retrieved_or_generated_utc": "2026-11-18T14:01:05.071454+00:00"
 }

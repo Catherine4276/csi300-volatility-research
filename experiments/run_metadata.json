@@ -1,9 +1,9 @@
 {
-  "forecast_rows": 4090,
+  "forecast_rows": 4096,
   "forecast_start": "2010-01-04T00:00:00",
-  "forecast_end": "2026-11-09T00:00:00",
-  "run_id": "csi300-vol-20261110T164301Z",
-  "generated_at_utc": "2026-11-10T16:43:01.187261+00:00",
+  "forecast_end": "2026-11-17T00:00:00",
+  "run_id": "csi300-vol-20261118T140242Z",
+  "generated_at_utc": "2026-11-18T14:02:42.578786+00:00",
   "source_sha256": "2bb0de858f21e5bf751599147907c059fc11a90a29ca457c966bd3ad4135e6b8",
   "config_sha256": "d505fd6756c6c6f45159d310eccae91486af86a879f525e6d60b8e21deb51403",
   "package_versions": {
@@ -106,7 +106,7 @@
       ]
     }
   },
-  "model_refits": 186,
+  "model_refits": 187,
   "xgb_tuning_events": 16,
   "target_definition": "next-trading-day Garman-Klass OHLC variance proxy"
 }

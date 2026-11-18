@@ -14,7 +14,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2009-12-31T00:00:00",
     "training_rows": 960,
-    "fitted_at_utc": "2026-11-10T16:41:32.293280+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:17.497594+00:00",
     "refit_forecast_origin": "2010-01-04T00:00:00",
     "tuned_this_refit": true
   },
@@ -33,7 +33,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-02-02T00:00:00",
     "training_rows": 982,
-    "fitted_at_utc": "2026-11-10T16:41:32.437294+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:17.633128+00:00",
     "refit_forecast_origin": "2010-02-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -52,7 +52,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-03-11T00:00:00",
     "training_rows": 1004,
-    "fitted_at_utc": "2026-11-10T16:41:32.583367+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:17.760707+00:00",
     "refit_forecast_origin": "2010-03-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -71,7 +71,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-04-13T00:00:00",
     "training_rows": 1026,
-    "fitted_at_utc": "2026-11-10T16:41:32.722528+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:17.887930+00:00",
     "refit_forecast_origin": "2010-04-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -90,7 +90,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-05-14T00:00:00",
     "training_rows": 1048,
-    "fitted_at_utc": "2026-11-10T16:41:32.862926+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:17.999458+00:00",
     "refit_forecast_origin": "2010-05-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -109,7 +109,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-06-18T00:00:00",
     "training_rows": 1070,
-    "fitted_at_utc": "2026-11-10T16:41:33.004906+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.129582+00:00",
     "refit_forecast_origin": "2010-06-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -128,7 +128,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-07-20T00:00:00",
     "training_rows": 1092,
-    "fitted_at_utc": "2026-11-10T16:41:33.151857+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.274966+00:00",
     "refit_forecast_origin": "2010-07-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -147,7 +147,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-08-19T00:00:00",
     "training_rows": 1114,
-    "fitted_at_utc": "2026-11-10T16:41:33.290724+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.425793+00:00",
     "refit_forecast_origin": "2010-08-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -166,7 +166,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-09-20T00:00:00",
     "training_rows": 1136,
-    "fitted_at_utc": "2026-11-10T16:41:33.432409+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.547168+00:00",
     "refit_forecast_origin": "2010-09-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -185,7 +185,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-11-01T00:00:00",
     "training_rows": 1158,
-    "fitted_at_utc": "2026-11-10T16:41:33.575738+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.678944+00:00",
     "refit_forecast_origin": "2010-11-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -204,7 +204,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-12-01T00:00:00",
     "training_rows": 1180,
-    "fitted_at_utc": "2026-11-10T16:41:33.724515+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.801089+00:00",
     "refit_forecast_origin": "2010-12-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -223,7 +223,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2010-12-31T00:00:00",
     "training_rows": 1202,
-    "fitted_at_utc": "2026-11-10T16:41:33.867799+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:18.935765+00:00",
     "refit_forecast_origin": "2011-01-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -242,7 +242,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-02-09T00:00:00",
     "training_rows": 1224,
-    "fitted_at_utc": "2026-11-10T16:41:34.465488+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:19.514742+00:00",
     "refit_forecast_origin": "2011-02-10T00:00:00",
     "tuned_this_refit": true
   },
@@ -261,7 +261,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-03-11T00:00:00",
     "training_rows": 1246,
-    "fitted_at_utc": "2026-11-10T16:41:34.605009+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:19.635342+00:00",
     "refit_forecast_origin": "2011-03-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -280,7 +280,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-04-14T00:00:00",
     "training_rows": 1268,
-    "fitted_at_utc": "2026-11-10T16:41:34.742626+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:19.751105+00:00",
     "refit_forecast_origin": "2011-04-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -299,7 +299,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-05-17T00:00:00",
     "training_rows": 1290,
-    "fitted_at_utc": "2026-11-10T16:41:34.881856+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:19.870784+00:00",
     "refit_forecast_origin": "2011-05-18T00:00:00",
     "tuned_this_refit": false
   },
@@ -318,7 +318,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-06-17T00:00:00",
     "training_rows": 1312,
-    "fitted_at_utc": "2026-11-10T16:41:35.014517+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:19.993113+00:00",
     "refit_forecast_origin": "2011-06-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -337,7 +337,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-07-19T00:00:00",
     "training_rows": 1334,
-    "fitted_at_utc": "2026-11-10T16:41:35.145184+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.116139+00:00",
     "refit_forecast_origin": "2011-07-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -356,7 +356,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-08-18T00:00:00",
     "training_rows": 1356,
-    "fitted_at_utc": "2026-11-10T16:41:35.286926+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.239568+00:00",
     "refit_forecast_origin": "2011-08-19T00:00:00",
     "tuned_this_refit": false
   },
@@ -375,7 +375,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-09-20T00:00:00",
     "training_rows": 1378,
-    "fitted_at_utc": "2026-11-10T16:41:35.426538+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.374373+00:00",
     "refit_forecast_origin": "2011-09-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -394,7 +394,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-10-27T00:00:00",
     "training_rows": 1400,
-    "fitted_at_utc": "2026-11-10T16:41:35.553303+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.514683+00:00",
     "refit_forecast_origin": "2011-10-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -413,7 +413,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-11-28T00:00:00",
     "training_rows": 1422,
-    "fitted_at_utc": "2026-11-10T16:41:35.689155+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.653929+00:00",
     "refit_forecast_origin": "2011-11-29T00:00:00",
     "tuned_this_refit": false
   },
@@ -432,7 +432,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2011-12-28T00:00:00",
     "training_rows": 1444,
-    "fitted_at_utc": "2026-11-10T16:41:35.831019+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.783559+00:00",
     "refit_forecast_origin": "2011-12-29T00:00:00",
     "tuned_this_refit": false
   },
@@ -451,7 +451,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-02-07T00:00:00",
     "training_rows": 1466,
-    "fitted_at_utc": "2026-11-10T16:41:35.967423+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:20.920452+00:00",
     "refit_forecast_origin": "2012-02-08T00:00:00",
     "tuned_this_refit": false
   },
@@ -470,7 +470,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-03-08T00:00:00",
     "training_rows": 1488,
-    "fitted_at_utc": "2026-11-10T16:41:36.570920+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:21.498424+00:00",
     "refit_forecast_origin": "2012-03-09T00:00:00",
     "tuned_this_refit": true
   },
@@ -489,7 +489,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-04-12T00:00:00",
     "training_rows": 1510,
-    "fitted_at_utc": "2026-11-10T16:41:36.692877+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:21.607335+00:00",
     "refit_forecast_origin": "2012-04-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -508,7 +508,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-05-16T00:00:00",
     "training_rows": 1532,
-    "fitted_at_utc": "2026-11-10T16:41:36.810311+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:21.709383+00:00",
     "refit_forecast_origin": "2012-05-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -527,7 +527,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-06-15T00:00:00",
     "training_rows": 1554,
-    "fitted_at_utc": "2026-11-10T16:41:36.927250+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:21.818883+00:00",
     "refit_forecast_origin": "2012-06-18T00:00:00",
     "tuned_this_refit": false
   },
@@ -546,7 +546,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-07-18T00:00:00",
     "training_rows": 1576,
-    "fitted_at_utc": "2026-11-10T16:41:37.039796+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:21.923658+00:00",
     "refit_forecast_origin": "2012-07-19T00:00:00",
     "tuned_this_refit": false
   },
@@ -565,7 +565,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-08-17T00:00:00",
     "training_rows": 1598,
-    "fitted_at_utc": "2026-11-10T16:41:37.163482+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.029369+00:00",
     "refit_forecast_origin": "2012-08-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -584,7 +584,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-09-18T00:00:00",
     "training_rows": 1620,
-    "fitted_at_utc": "2026-11-10T16:41:37.273637+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.126973+00:00",
     "refit_forecast_origin": "2012-09-19T00:00:00",
     "tuned_this_refit": false
   },
@@ -603,7 +603,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-10-25T00:00:00",
     "training_rows": 1642,
-    "fitted_at_utc": "2026-11-10T16:41:37.394379+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.230949+00:00",
     "refit_forecast_origin": "2012-10-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -622,7 +622,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-11-26T00:00:00",
     "training_rows": 1664,
-    "fitted_at_utc": "2026-11-10T16:41:37.502026+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.336616+00:00",
     "refit_forecast_origin": "2012-11-27T00:00:00",
     "tuned_this_refit": false
   },
@@ -641,7 +641,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2012-12-26T00:00:00",
     "training_rows": 1686,
-    "fitted_at_utc": "2026-11-10T16:41:37.610527+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.433127+00:00",
     "refit_forecast_origin": "2012-12-27T00:00:00",
     "tuned_this_refit": false
   },
@@ -660,7 +660,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-01-30T00:00:00",
     "training_rows": 1708,
-    "fitted_at_utc": "2026-11-10T16:41:37.729681+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.544712+00:00",
     "refit_forecast_origin": "2013-01-31T00:00:00",
     "tuned_this_refit": false
   },
@@ -679,7 +679,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-03-08T00:00:00",
     "training_rows": 1730,
-    "fitted_at_utc": "2026-11-10T16:41:37.840462+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:22.657972+00:00",
     "refit_forecast_origin": "2013-03-11T00:00:00",
     "tuned_this_refit": false
   },
@@ -698,7 +698,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-04-11T00:00:00",
     "training_rows": 1752,
-    "fitted_at_utc": "2026-11-10T16:41:38.501068+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:23.268148+00:00",
     "refit_forecast_origin": "2013-04-12T00:00:00",
     "tuned_this_refit": true
   },
@@ -717,7 +717,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-05-16T00:00:00",
     "training_rows": 1774,
-    "fitted_at_utc": "2026-11-10T16:41:38.625638+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:23.412151+00:00",
     "refit_forecast_origin": "2013-05-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -736,7 +736,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-06-20T00:00:00",
     "training_rows": 1796,
-    "fitted_at_utc": "2026-11-10T16:41:38.765398+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:23.560734+00:00",
     "refit_forecast_origin": "2013-06-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -755,7 +755,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-07-22T00:00:00",
     "training_rows": 1818,
-    "fitted_at_utc": "2026-11-10T16:41:38.904529+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:23.691126+00:00",
     "refit_forecast_origin": "2013-07-23T00:00:00",
     "tuned_this_refit": false
   },
@@ -774,7 +774,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-08-21T00:00:00",
     "training_rows": 1840,
-    "fitted_at_utc": "2026-11-10T16:41:39.044950+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:23.837475+00:00",
     "refit_forecast_origin": "2013-08-22T00:00:00",
     "tuned_this_refit": false
   },
@@ -793,7 +793,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-09-24T00:00:00",
     "training_rows": 1862,
-    "fitted_at_utc": "2026-11-10T16:41:39.187140+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:23.967734+00:00",
     "refit_forecast_origin": "2013-09-25T00:00:00",
     "tuned_this_refit": false
   },
@@ -812,7 +812,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-10-31T00:00:00",
     "training_rows": 1884,
-    "fitted_at_utc": "2026-11-10T16:41:39.324871+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:24.108736+00:00",
     "refit_forecast_origin": "2013-11-01T00:00:00",
     "tuned_this_refit": false
   },
@@ -831,7 +831,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2013-12-02T00:00:00",
     "training_rows": 1906,
-    "fitted_at_utc": "2026-11-10T16:41:39.469483+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:24.265965+00:00",
     "refit_forecast_origin": "2013-12-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -850,7 +850,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-01-02T00:00:00",
     "training_rows": 1928,
-    "fitted_at_utc": "2026-11-10T16:41:39.605085+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:24.438252+00:00",
     "refit_forecast_origin": "2014-01-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -869,7 +869,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-02-10T00:00:00",
     "training_rows": 1950,
-    "fitted_at_utc": "2026-11-10T16:41:39.751893+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:24.589162+00:00",
     "refit_forecast_origin": "2014-02-11T00:00:00",
     "tuned_this_refit": false
   },
@@ -888,7 +888,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-03-12T00:00:00",
     "training_rows": 1972,
-    "fitted_at_utc": "2026-11-10T16:41:39.894232+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:24.723165+00:00",
     "refit_forecast_origin": "2014-03-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -907,7 +907,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-04-14T00:00:00",
     "training_rows": 1994,
-    "fitted_at_utc": "2026-11-10T16:41:40.027719+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:24.868648+00:00",
     "refit_forecast_origin": "2014-04-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -926,7 +926,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-05-16T00:00:00",
     "training_rows": 2016,
-    "fitted_at_utc": "2026-11-10T16:41:40.694449+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:25.492141+00:00",
     "refit_forecast_origin": "2014-05-19T00:00:00",
     "tuned_this_refit": true
   },
@@ -945,7 +945,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-06-18T00:00:00",
     "training_rows": 2038,
-    "fitted_at_utc": "2026-11-10T16:41:40.839982+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:25.636628+00:00",
     "refit_forecast_origin": "2014-06-19T00:00:00",
     "tuned_this_refit": false
   },
@@ -964,7 +964,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-07-18T00:00:00",
     "training_rows": 2060,
-    "fitted_at_utc": "2026-11-10T16:41:40.990119+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:25.780916+00:00",
     "refit_forecast_origin": "2014-07-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -983,7 +983,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-08-19T00:00:00",
     "training_rows": 2082,
-    "fitted_at_utc": "2026-11-10T16:41:41.144566+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:25.923122+00:00",
     "refit_forecast_origin": "2014-08-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -1002,7 +1002,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-09-19T00:00:00",
     "training_rows": 2104,
-    "fitted_at_utc": "2026-11-10T16:41:41.285568+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.051878+00:00",
     "refit_forecast_origin": "2014-09-22T00:00:00",
     "tuned_this_refit": false
   },
@@ -1021,7 +1021,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-10-28T00:00:00",
     "training_rows": 2126,
-    "fitted_at_utc": "2026-11-10T16:41:41.438074+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.185306+00:00",
     "refit_forecast_origin": "2014-10-29T00:00:00",
     "tuned_this_refit": false
   },
@@ -1040,7 +1040,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-11-27T00:00:00",
     "training_rows": 2148,
-    "fitted_at_utc": "2026-11-10T16:41:41.581998+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.325746+00:00",
     "refit_forecast_origin": "2014-11-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -1059,7 +1059,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2014-12-29T00:00:00",
     "training_rows": 2170,
-    "fitted_at_utc": "2026-11-10T16:41:41.737672+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.464608+00:00",
     "refit_forecast_origin": "2014-12-30T00:00:00",
     "tuned_this_refit": false
   },
@@ -1078,7 +1078,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-01-30T00:00:00",
     "training_rows": 2192,
-    "fitted_at_utc": "2026-11-10T16:41:41.886432+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.604319+00:00",
     "refit_forecast_origin": "2015-02-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -1097,7 +1097,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-03-10T00:00:00",
     "training_rows": 2214,
-    "fitted_at_utc": "2026-11-10T16:41:42.034944+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.737373+00:00",
     "refit_forecast_origin": "2015-03-11T00:00:00",
     "tuned_this_refit": false
   },
@@ -1116,7 +1116,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-04-10T00:00:00",
     "training_rows": 2236,
-    "fitted_at_utc": "2026-11-10T16:41:42.185003+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:26.902121+00:00",
     "refit_forecast_origin": "2015-04-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -1135,7 +1135,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-05-13T00:00:00",
     "training_rows": 2258,
-    "fitted_at_utc": "2026-11-10T16:41:42.330897+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:27.057758+00:00",
     "refit_forecast_origin": "2015-05-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -1154,7 +1154,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-06-12T00:00:00",
     "training_rows": 2280,
-    "fitted_at_utc": "2026-11-10T16:41:43.021646+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:27.711358+00:00",
     "refit_forecast_origin": "2015-06-15T00:00:00",
     "tuned_this_refit": true
   },
@@ -1173,7 +1173,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-07-15T00:00:00",
     "training_rows": 2302,
-    "fitted_at_utc": "2026-11-10T16:41:43.182651+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:27.867974+00:00",
     "refit_forecast_origin": "2015-07-16T00:00:00",
     "tuned_this_refit": false
   },
@@ -1192,7 +1192,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-08-14T00:00:00",
     "training_rows": 2324,
-    "fitted_at_utc": "2026-11-10T16:41:43.350191+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.014289+00:00",
     "refit_forecast_origin": "2015-08-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -1211,7 +1211,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-09-17T00:00:00",
     "training_rows": 2346,
-    "fitted_at_utc": "2026-11-10T16:41:43.514296+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.163972+00:00",
     "refit_forecast_origin": "2015-09-18T00:00:00",
     "tuned_this_refit": false
   },
@@ -1230,7 +1230,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-10-26T00:00:00",
     "training_rows": 2368,
-    "fitted_at_utc": "2026-11-10T16:41:43.674005+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.310398+00:00",
     "refit_forecast_origin": "2015-10-27T00:00:00",
     "tuned_this_refit": false
   },
@@ -1249,7 +1249,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-11-25T00:00:00",
     "training_rows": 2390,
-    "fitted_at_utc": "2026-11-10T16:41:43.837483+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.463701+00:00",
     "refit_forecast_origin": "2015-11-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -1268,7 +1268,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2015-12-25T00:00:00",
     "training_rows": 2412,
-    "fitted_at_utc": "2026-11-10T16:41:44.006163+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.615283+00:00",
     "refit_forecast_origin": "2015-12-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -1287,7 +1287,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-01-27T00:00:00",
     "training_rows": 2434,
-    "fitted_at_utc": "2026-11-10T16:41:44.166115+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.767163+00:00",
     "refit_forecast_origin": "2016-01-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -1306,7 +1306,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-03-04T00:00:00",
     "training_rows": 2456,
-    "fitted_at_utc": "2026-11-10T16:41:44.331602+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:28.918112+00:00",
     "refit_forecast_origin": "2016-03-07T00:00:00",
     "tuned_this_refit": false
   },
@@ -1325,7 +1325,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-04-06T00:00:00",
     "training_rows": 2478,
-    "fitted_at_utc": "2026-11-10T16:41:44.500255+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:29.057970+00:00",
     "refit_forecast_origin": "2016-04-07T00:00:00",
     "tuned_this_refit": false
   },
@@ -1344,7 +1344,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-05-09T00:00:00",
     "training_rows": 2500,
-    "fitted_at_utc": "2026-11-10T16:41:44.665034+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:29.217644+00:00",
     "refit_forecast_origin": "2016-05-10T00:00:00",
     "tuned_this_refit": false
   },
@@ -1363,7 +1363,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-06-08T00:00:00",
     "training_rows": 2522,
-    "fitted_at_utc": "2026-11-10T16:41:44.833092+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:29.355789+00:00",
     "refit_forecast_origin": "2016-06-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -1382,7 +1382,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-07-12T00:00:00",
     "training_rows": 2544,
-    "fitted_at_utc": "2026-11-10T16:41:45.535249+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.025994+00:00",
     "refit_forecast_origin": "2016-07-13T00:00:00",
     "tuned_this_refit": true
   },
@@ -1401,7 +1401,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-08-11T00:00:00",
     "training_rows": 2566,
-    "fitted_at_utc": "2026-11-10T16:41:45.690509+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.177175+00:00",
     "refit_forecast_origin": "2016-08-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -1420,7 +1420,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-09-12T00:00:00",
     "training_rows": 2588,
-    "fitted_at_utc": "2026-11-10T16:41:45.841695+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.328066+00:00",
     "refit_forecast_origin": "2016-09-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -1439,7 +1439,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-10-21T00:00:00",
     "training_rows": 2610,
-    "fitted_at_utc": "2026-11-10T16:41:46.006149+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.481113+00:00",
     "refit_forecast_origin": "2016-10-24T00:00:00",
     "tuned_this_refit": false
   },
@@ -1458,7 +1458,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-11-22T00:00:00",
     "training_rows": 2632,
-    "fitted_at_utc": "2026-11-10T16:41:46.167367+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.638349+00:00",
     "refit_forecast_origin": "2016-11-23T00:00:00",
     "tuned_this_refit": false
   },
@@ -1477,7 +1477,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2016-12-22T00:00:00",
     "training_rows": 2654,
-    "fitted_at_utc": "2026-11-10T16:41:46.332605+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.784249+00:00",
     "refit_forecast_origin": "2016-12-23T00:00:00",
     "tuned_this_refit": false
   },
@@ -1496,7 +1496,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-01-24T00:00:00",
     "training_rows": 2676,
-    "fitted_at_utc": "2026-11-10T16:41:46.498521+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:30.932660+00:00",
     "refit_forecast_origin": "2017-01-25T00:00:00",
     "tuned_this_refit": false
   },
@@ -1515,7 +1515,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-03-02T00:00:00",
     "training_rows": 2698,
-    "fitted_at_utc": "2026-11-10T16:41:46.658123+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:31.098777+00:00",
     "refit_forecast_origin": "2017-03-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -1534,7 +1534,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-04-05T00:00:00",
     "training_rows": 2720,
-    "fitted_at_utc": "2026-11-10T16:41:46.810771+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:31.264043+00:00",
     "refit_forecast_origin": "2017-04-06T00:00:00",
     "tuned_this_refit": false
   },
@@ -1553,7 +1553,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-05-08T00:00:00",
     "training_rows": 2742,
-    "fitted_at_utc": "2026-11-10T16:41:46.970319+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:31.420732+00:00",
     "refit_forecast_origin": "2017-05-09T00:00:00",
     "tuned_this_refit": false
   },
@@ -1572,7 +1572,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-06-09T00:00:00",
     "training_rows": 2764,
-    "fitted_at_utc": "2026-11-10T16:41:47.127606+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:31.572538+00:00",
     "refit_forecast_origin": "2017-06-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -1591,7 +1591,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-07-11T00:00:00",
     "training_rows": 2786,
-    "fitted_at_utc": "2026-11-10T16:41:47.293682+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:31.723211+00:00",
     "refit_forecast_origin": "2017-07-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -1610,7 +1610,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-08-10T00:00:00",
     "training_rows": 2808,
-    "fitted_at_utc": "2026-11-10T16:41:47.998153+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:32.435178+00:00",
     "refit_forecast_origin": "2017-08-11T00:00:00",
     "tuned_this_refit": true
   },
@@ -1629,7 +1629,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-09-11T00:00:00",
     "training_rows": 2830,
-    "fitted_at_utc": "2026-11-10T16:41:48.158121+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:32.586262+00:00",
     "refit_forecast_origin": "2017-09-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -1648,7 +1648,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-10-18T00:00:00",
     "training_rows": 2852,
-    "fitted_at_utc": "2026-11-10T16:41:48.292960+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:32.742435+00:00",
     "refit_forecast_origin": "2017-10-19T00:00:00",
     "tuned_this_refit": false
   },
@@ -1667,7 +1667,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-11-17T00:00:00",
     "training_rows": 2874,
-    "fitted_at_utc": "2026-11-10T16:41:48.451934+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:32.884385+00:00",
     "refit_forecast_origin": "2017-11-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -1686,7 +1686,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2017-12-19T00:00:00",
     "training_rows": 2896,
-    "fitted_at_utc": "2026-11-10T16:41:48.614563+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.036070+00:00",
     "refit_forecast_origin": "2017-12-20T00:00:00",
     "tuned_this_refit": false
   },
@@ -1705,7 +1705,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-01-19T00:00:00",
     "training_rows": 2918,
-    "fitted_at_utc": "2026-11-10T16:41:48.782432+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.186166+00:00",
     "refit_forecast_origin": "2018-01-22T00:00:00",
     "tuned_this_refit": false
   },
@@ -1724,7 +1724,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-02-27T00:00:00",
     "training_rows": 2940,
-    "fitted_at_utc": "2026-11-10T16:41:48.940153+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.336425+00:00",
     "refit_forecast_origin": "2018-02-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -1743,7 +1743,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-03-29T00:00:00",
     "training_rows": 2962,
-    "fitted_at_utc": "2026-11-10T16:41:49.094010+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.487248+00:00",
     "refit_forecast_origin": "2018-03-30T00:00:00",
     "tuned_this_refit": false
   },
@@ -1762,7 +1762,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-05-04T00:00:00",
     "training_rows": 2984,
-    "fitted_at_utc": "2026-11-10T16:41:49.248066+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.631796+00:00",
     "refit_forecast_origin": "2018-05-07T00:00:00",
     "tuned_this_refit": false
   },
@@ -1781,7 +1781,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-06-05T00:00:00",
     "training_rows": 3006,
-    "fitted_at_utc": "2026-11-10T16:41:49.403515+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.785400+00:00",
     "refit_forecast_origin": "2018-06-06T00:00:00",
     "tuned_this_refit": false
   },
@@ -1800,7 +1800,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-07-06T00:00:00",
     "training_rows": 3028,
-    "fitted_at_utc": "2026-11-10T16:41:49.567068+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:33.931878+00:00",
     "refit_forecast_origin": "2018-07-09T00:00:00",
     "tuned_this_refit": false
   },
@@ -1819,7 +1819,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-08-07T00:00:00",
     "training_rows": 3050,
-    "fitted_at_utc": "2026-11-10T16:41:49.734686+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:34.085185+00:00",
     "refit_forecast_origin": "2018-08-08T00:00:00",
     "tuned_this_refit": false
   },
@@ -1838,7 +1838,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-09-06T00:00:00",
     "training_rows": 3072,
-    "fitted_at_utc": "2026-11-10T16:41:50.446066+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:34.765528+00:00",
     "refit_forecast_origin": "2018-09-07T00:00:00",
     "tuned_this_refit": true
   },
@@ -1857,7 +1857,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-10-16T00:00:00",
     "training_rows": 3094,
-    "fitted_at_utc": "2026-11-10T16:41:50.618200+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:34.903675+00:00",
     "refit_forecast_origin": "2018-10-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -1876,7 +1876,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-11-15T00:00:00",
     "training_rows": 3116,
-    "fitted_at_utc": "2026-11-10T16:41:50.779611+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.054767+00:00",
     "refit_forecast_origin": "2018-11-16T00:00:00",
     "tuned_this_refit": false
   },
@@ -1895,7 +1895,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2018-12-17T00:00:00",
     "training_rows": 3138,
-    "fitted_at_utc": "2026-11-10T16:41:50.940784+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.202892+00:00",
     "refit_forecast_origin": "2018-12-18T00:00:00",
     "tuned_this_refit": false
   },
@@ -1914,7 +1914,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-01-18T00:00:00",
     "training_rows": 3160,
-    "fitted_at_utc": "2026-11-10T16:41:51.095541+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.359626+00:00",
     "refit_forecast_origin": "2019-01-21T00:00:00",
     "tuned_this_refit": false
   },
@@ -1933,7 +1933,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-02-26T00:00:00",
     "training_rows": 3182,
-    "fitted_at_utc": "2026-11-10T16:41:51.249047+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.532024+00:00",
     "refit_forecast_origin": "2019-02-27T00:00:00",
     "tuned_this_refit": false
   },
@@ -1952,7 +1952,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-03-28T00:00:00",
     "training_rows": 3204,
-    "fitted_at_utc": "2026-11-10T16:41:51.405209+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.689086+00:00",
     "refit_forecast_origin": "2019-03-29T00:00:00",
     "tuned_this_refit": false
   },
@@ -1971,7 +1971,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-04-30T00:00:00",
     "training_rows": 3226,
-    "fitted_at_utc": "2026-11-10T16:41:51.570729+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.844435+00:00",
     "refit_forecast_origin": "2019-05-06T00:00:00",
     "tuned_this_refit": false
   },
@@ -1990,7 +1990,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-06-04T00:00:00",
     "training_rows": 3248,
-    "fitted_at_utc": "2026-11-10T16:41:51.738598+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:35.988589+00:00",
     "refit_forecast_origin": "2019-06-05T00:00:00",
     "tuned_this_refit": false
   },
@@ -2009,7 +2009,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-07-05T00:00:00",
     "training_rows": 3270,
-    "fitted_at_utc": "2026-11-10T16:41:51.907583+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:36.154555+00:00",
     "refit_forecast_origin": "2019-07-08T00:00:00",
     "tuned_this_refit": false
   },
@@ -2028,7 +2028,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-08-06T00:00:00",
     "training_rows": 3292,
-    "fitted_at_utc": "2026-11-10T16:41:52.077614+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:36.322388+00:00",
     "refit_forecast_origin": "2019-08-07T00:00:00",
     "tuned_this_refit": false
   },
@@ -2047,7 +2047,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-09-05T00:00:00",
     "training_rows": 3314,
-    "fitted_at_utc": "2026-11-10T16:41:52.240999+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:36.475166+00:00",
     "refit_forecast_origin": "2019-09-06T00:00:00",
     "tuned_this_refit": false
   },
@@ -2066,7 +2066,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-10-15T00:00:00",
     "training_rows": 3336,
-    "fitted_at_utc": "2026-11-10T16:41:52.989151+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:37.221966+00:00",
     "refit_forecast_origin": "2019-10-16T00:00:00",
     "tuned_this_refit": true
   },
@@ -2085,7 +2085,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-11-14T00:00:00",
     "training_rows": 3358,
-    "fitted_at_utc": "2026-11-10T16:41:53.160084+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:37.379252+00:00",
     "refit_forecast_origin": "2019-11-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -2104,7 +2104,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2019-12-16T00:00:00",
     "training_rows": 3380,
-    "fitted_at_utc": "2026-11-10T16:41:53.317649+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:37.530298+00:00",
     "refit_forecast_origin": "2019-12-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -2123,7 +2123,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-01-16T00:00:00",
     "training_rows": 3402,
-    "fitted_at_utc": "2026-11-10T16:41:53.486570+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:37.683094+00:00",
     "refit_forecast_origin": "2020-01-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -2142,7 +2142,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-02-25T00:00:00",
     "training_rows": 3424,
-    "fitted_at_utc": "2026-11-10T16:41:53.659311+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:37.828917+00:00",
     "refit_forecast_origin": "2020-02-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -2161,7 +2161,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-03-26T00:00:00",
     "training_rows": 3446,
-    "fitted_at_utc": "2026-11-10T16:41:53.816191+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:37.975114+00:00",
     "refit_forecast_origin": "2020-03-27T00:00:00",
     "tuned_this_refit": false
   },
@@ -2180,7 +2180,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-04-28T00:00:00",
     "training_rows": 3468,
-    "fitted_at_utc": "2026-11-10T16:41:53.984887+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:38.115511+00:00",
     "refit_forecast_origin": "2020-04-29T00:00:00",
     "tuned_this_refit": false
   },
@@ -2199,7 +2199,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-06-02T00:00:00",
     "training_rows": 3490,
-    "fitted_at_utc": "2026-11-10T16:41:54.152072+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:38.263182+00:00",
     "refit_forecast_origin": "2020-06-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -2218,7 +2218,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-07-06T00:00:00",
     "training_rows": 3512,
-    "fitted_at_utc": "2026-11-10T16:41:54.311374+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:38.424103+00:00",
     "refit_forecast_origin": "2020-07-07T00:00:00",
     "tuned_this_refit": false
   },
@@ -2237,7 +2237,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-08-05T00:00:00",
     "training_rows": 3534,
-    "fitted_at_utc": "2026-11-10T16:41:54.480289+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:38.575803+00:00",
     "refit_forecast_origin": "2020-08-06T00:00:00",
     "tuned_this_refit": false
   },
@@ -2256,7 +2256,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-09-04T00:00:00",
     "training_rows": 3556,
-    "fitted_at_utc": "2026-11-10T16:41:54.653742+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:38.719539+00:00",
     "refit_forecast_origin": "2020-09-07T00:00:00",
     "tuned_this_refit": false
   },
@@ -2275,7 +2275,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-10-14T00:00:00",
     "training_rows": 3578,
-    "fitted_at_utc": "2026-11-10T16:41:54.818092+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:38.872573+00:00",
     "refit_forecast_origin": "2020-10-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -2294,7 +2294,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-11-13T00:00:00",
     "training_rows": 3600,
-    "fitted_at_utc": "2026-11-10T16:41:55.565846+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:39.595634+00:00",
     "refit_forecast_origin": "2020-11-16T00:00:00",
     "tuned_this_refit": true
   },
@@ -2313,7 +2313,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2020-12-15T00:00:00",
     "training_rows": 3622,
-    "fitted_at_utc": "2026-11-10T16:41:55.725108+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:39.771839+00:00",
     "refit_forecast_origin": "2020-12-16T00:00:00",
     "tuned_this_refit": false
   },
@@ -2332,7 +2332,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-01-15T00:00:00",
     "training_rows": 3644,
-    "fitted_at_utc": "2026-11-10T16:41:55.896909+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:39.943581+00:00",
     "refit_forecast_origin": "2021-01-18T00:00:00",
     "tuned_this_refit": false
   },
@@ -2351,7 +2351,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-02-23T00:00:00",
     "training_rows": 3666,
-    "fitted_at_utc": "2026-11-10T16:41:56.072530+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:40.111009+00:00",
     "refit_forecast_origin": "2021-02-24T00:00:00",
     "tuned_this_refit": false
   },
@@ -2370,7 +2370,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-03-25T00:00:00",
     "training_rows": 3688,
-    "fitted_at_utc": "2026-11-10T16:41:56.251721+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:40.283381+00:00",
     "refit_forecast_origin": "2021-03-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -2389,7 +2389,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-04-27T00:00:00",
     "training_rows": 3710,
-    "fitted_at_utc": "2026-11-10T16:41:56.498315+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:40.528051+00:00",
     "refit_forecast_origin": "2021-04-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -2408,7 +2408,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-06-01T00:00:00",
     "training_rows": 3732,
-    "fitted_at_utc": "2026-11-10T16:41:56.680061+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:40.696809+00:00",
     "refit_forecast_origin": "2021-06-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -2427,7 +2427,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-07-02T00:00:00",
     "training_rows": 3754,
-    "fitted_at_utc": "2026-11-10T16:41:56.873080+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:40.870457+00:00",
     "refit_forecast_origin": "2021-07-05T00:00:00",
     "tuned_this_refit": false
   },
@@ -2446,7 +2446,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-08-03T00:00:00",
     "training_rows": 3776,
-    "fitted_at_utc": "2026-11-10T16:41:57.063379+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:41.035932+00:00",
     "refit_forecast_origin": "2021-08-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -2465,7 +2465,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-09-02T00:00:00",
     "training_rows": 3798,
-    "fitted_at_utc": "2026-11-10T16:41:57.249584+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:41.209780+00:00",
     "refit_forecast_origin": "2021-09-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -2484,7 +2484,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-10-13T00:00:00",
     "training_rows": 3820,
-    "fitted_at_utc": "2026-11-10T16:41:57.443157+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:41.383273+00:00",
     "refit_forecast_origin": "2021-10-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -2503,7 +2503,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-11-12T00:00:00",
     "training_rows": 3842,
-    "fitted_at_utc": "2026-11-10T16:41:57.626156+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:41.556856+00:00",
     "refit_forecast_origin": "2021-11-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -2522,7 +2522,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2021-12-14T00:00:00",
     "training_rows": 3864,
-    "fitted_at_utc": "2026-11-10T16:41:58.409710+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:42.320143+00:00",
     "refit_forecast_origin": "2021-12-15T00:00:00",
     "tuned_this_refit": true
   },
@@ -2541,7 +2541,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-01-14T00:00:00",
     "training_rows": 3886,
-    "fitted_at_utc": "2026-11-10T16:41:58.585118+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:42.488424+00:00",
     "refit_forecast_origin": "2022-01-17T00:00:00",
     "tuned_this_refit": false
   },
@@ -2560,7 +2560,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-02-22T00:00:00",
     "training_rows": 3908,
-    "fitted_at_utc": "2026-11-10T16:41:58.759329+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:42.652620+00:00",
     "refit_forecast_origin": "2022-02-23T00:00:00",
     "tuned_this_refit": false
   },
@@ -2579,7 +2579,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-03-24T00:00:00",
     "training_rows": 3930,
-    "fitted_at_utc": "2026-11-10T16:41:58.936612+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:42.823911+00:00",
     "refit_forecast_origin": "2022-03-25T00:00:00",
     "tuned_this_refit": false
   },
@@ -2598,7 +2598,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-04-27T00:00:00",
     "training_rows": 3952,
-    "fitted_at_utc": "2026-11-10T16:41:59.111585+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:42.993785+00:00",
     "refit_forecast_origin": "2022-04-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -2617,7 +2617,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-06-01T00:00:00",
     "training_rows": 3974,
-    "fitted_at_utc": "2026-11-10T16:41:59.289030+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:43.166787+00:00",
     "refit_forecast_origin": "2022-06-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -2636,7 +2636,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-07-04T00:00:00",
     "training_rows": 3996,
-    "fitted_at_utc": "2026-11-10T16:41:59.460402+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:43.322383+00:00",
     "refit_forecast_origin": "2022-07-05T00:00:00",
     "tuned_this_refit": false
   },
@@ -2655,7 +2655,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-08-03T00:00:00",
     "training_rows": 4018,
-    "fitted_at_utc": "2026-11-10T16:41:59.645962+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:43.504793+00:00",
     "refit_forecast_origin": "2022-08-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -2674,7 +2674,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-09-02T00:00:00",
     "training_rows": 4040,
-    "fitted_at_utc": "2026-11-10T16:41:59.825537+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:43.672695+00:00",
     "refit_forecast_origin": "2022-09-05T00:00:00",
     "tuned_this_refit": false
   },
@@ -2693,7 +2693,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-10-12T00:00:00",
     "training_rows": 4062,
-    "fitted_at_utc": "2026-11-10T16:42:00.010795+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:43.844287+00:00",
     "refit_forecast_origin": "2022-10-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -2712,7 +2712,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-11-11T00:00:00",
     "training_rows": 4084,
-    "fitted_at_utc": "2026-11-10T16:42:00.188627+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:44.038309+00:00",
     "refit_forecast_origin": "2022-11-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -2731,7 +2731,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2022-12-13T00:00:00",
     "training_rows": 4106,
-    "fitted_at_utc": "2026-11-10T16:42:00.381048+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:44.219624+00:00",
     "refit_forecast_origin": "2022-12-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -2750,7 +2750,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-01-13T00:00:00",
     "training_rows": 4128,
-    "fitted_at_utc": "2026-11-10T16:42:01.192601+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:45.029218+00:00",
     "refit_forecast_origin": "2023-01-16T00:00:00",
     "tuned_this_refit": true
   },
@@ -2769,7 +2769,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-02-21T00:00:00",
     "training_rows": 4150,
-    "fitted_at_utc": "2026-11-10T16:42:01.368653+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:45.203436+00:00",
     "refit_forecast_origin": "2023-02-22T00:00:00",
     "tuned_this_refit": false
   },
@@ -2788,7 +2788,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-03-23T00:00:00",
     "training_rows": 4172,
-    "fitted_at_utc": "2026-11-10T16:42:01.559580+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:45.391546+00:00",
     "refit_forecast_origin": "2023-03-24T00:00:00",
     "tuned_this_refit": false
   },
@@ -2807,7 +2807,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-04-25T00:00:00",
     "training_rows": 4194,
-    "fitted_at_utc": "2026-11-10T16:42:01.744200+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:45.566366+00:00",
     "refit_forecast_origin": "2023-04-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -2826,7 +2826,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-05-30T00:00:00",
     "training_rows": 4216,
-    "fitted_at_utc": "2026-11-10T16:42:01.917077+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:45.740816+00:00",
     "refit_forecast_origin": "2023-05-31T00:00:00",
     "tuned_this_refit": false
   },
@@ -2845,7 +2845,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-07-03T00:00:00",
     "training_rows": 4238,
-    "fitted_at_utc": "2026-11-10T16:42:02.104801+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:45.928115+00:00",
     "refit_forecast_origin": "2023-07-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -2864,7 +2864,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-08-02T00:00:00",
     "training_rows": 4260,
-    "fitted_at_utc": "2026-11-10T16:42:02.288569+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:46.135147+00:00",
     "refit_forecast_origin": "2023-08-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -2883,7 +2883,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-09-01T00:00:00",
     "training_rows": 4282,
-    "fitted_at_utc": "2026-11-10T16:42:02.470880+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:46.321738+00:00",
     "refit_forecast_origin": "2023-09-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -2902,7 +2902,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-10-11T00:00:00",
     "training_rows": 4304,
-    "fitted_at_utc": "2026-11-10T16:42:02.654803+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:46.509104+00:00",
     "refit_forecast_origin": "2023-10-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -2921,7 +2921,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-11-10T00:00:00",
     "training_rows": 4326,
-    "fitted_at_utc": "2026-11-10T16:42:02.846199+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:46.685156+00:00",
     "refit_forecast_origin": "2023-11-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -2940,7 +2940,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2023-12-12T00:00:00",
     "training_rows": 4348,
-    "fitted_at_utc": "2026-11-10T16:42:03.030883+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:46.853531+00:00",
     "refit_forecast_origin": "2023-12-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -2959,7 +2959,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-01-12T00:00:00",
     "training_rows": 4370,
-    "fitted_at_utc": "2026-11-10T16:42:03.214706+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:47.040394+00:00",
     "refit_forecast_origin": "2024-01-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -2978,7 +2978,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-02-21T00:00:00",
     "training_rows": 4392,
-    "fitted_at_utc": "2026-11-10T16:42:04.053105+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:47.820841+00:00",
     "refit_forecast_origin": "2024-02-22T00:00:00",
     "tuned_this_refit": true
   },
@@ -2997,7 +2997,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-03-22T00:00:00",
     "training_rows": 4414,
-    "fitted_at_utc": "2026-11-10T16:42:04.246418+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:47.998057+00:00",
     "refit_forecast_origin": "2024-03-25T00:00:00",
     "tuned_this_refit": false
   },
@@ -3016,7 +3016,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-04-25T00:00:00",
     "training_rows": 4436,
-    "fitted_at_utc": "2026-11-10T16:42:04.449913+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:48.183113+00:00",
     "refit_forecast_origin": "2024-04-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -3035,7 +3035,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-05-30T00:00:00",
     "training_rows": 4458,
-    "fitted_at_utc": "2026-11-10T16:42:04.641985+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:48.375853+00:00",
     "refit_forecast_origin": "2024-05-31T00:00:00",
     "tuned_this_refit": false
   },
@@ -3054,7 +3054,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-07-02T00:00:00",
     "training_rows": 4480,
-    "fitted_at_utc": "2026-11-10T16:42:04.836779+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:48.557418+00:00",
     "refit_forecast_origin": "2024-07-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3073,7 +3073,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-08-01T00:00:00",
     "training_rows": 4502,
-    "fitted_at_utc": "2026-11-10T16:42:05.038239+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:48.742262+00:00",
     "refit_forecast_origin": "2024-08-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -3092,7 +3092,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-09-02T00:00:00",
     "training_rows": 4524,
-    "fitted_at_utc": "2026-11-10T16:42:05.230858+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:48.922832+00:00",
     "refit_forecast_origin": "2024-09-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3111,7 +3111,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-10-11T00:00:00",
     "training_rows": 4546,
-    "fitted_at_utc": "2026-11-10T16:42:05.416728+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:49.119194+00:00",
     "refit_forecast_origin": "2024-10-14T00:00:00",
     "tuned_this_refit": false
   },
@@ -3130,7 +3130,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-11-12T00:00:00",
     "training_rows": 4568,
-    "fitted_at_utc": "2026-11-10T16:42:05.603721+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:49.305882+00:00",
     "refit_forecast_origin": "2024-11-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -3149,7 +3149,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2024-12-12T00:00:00",
     "training_rows": 4590,
-    "fitted_at_utc": "2026-11-10T16:42:05.796201+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:49.510747+00:00",
     "refit_forecast_origin": "2024-12-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -3168,7 +3168,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-01-14T00:00:00",
     "training_rows": 4612,
-    "fitted_at_utc": "2026-11-10T16:42:05.988024+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:49.701839+00:00",
     "refit_forecast_origin": "2025-01-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -3187,7 +3187,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-02-21T00:00:00",
     "training_rows": 4634,
-    "fitted_at_utc": "2026-11-10T16:42:06.182213+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:49.878267+00:00",
     "refit_forecast_origin": "2025-02-24T00:00:00",
     "tuned_this_refit": false
   },
@@ -3206,7 +3206,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-03-25T00:00:00",
     "training_rows": 4656,
-    "fitted_at_utc": "2026-11-10T16:42:06.980670+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:50.684809+00:00",
     "refit_forecast_origin": "2025-03-26T00:00:00",
     "tuned_this_refit": true
   },
@@ -3225,7 +3225,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-04-25T00:00:00",
     "training_rows": 4678,
-    "fitted_at_utc": "2026-11-10T16:42:07.158818+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:50.852787+00:00",
     "refit_forecast_origin": "2025-04-28T00:00:00",
     "tuned_this_refit": false
   },
@@ -3244,7 +3244,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-05-30T00:00:00",
     "training_rows": 4700,
-    "fitted_at_utc": "2026-11-10T16:42:07.344764+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:51.037427+00:00",
     "refit_forecast_origin": "2025-06-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3263,7 +3263,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-07-02T00:00:00",
     "training_rows": 4722,
-    "fitted_at_utc": "2026-11-10T16:42:07.532771+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:51.216291+00:00",
     "refit_forecast_origin": "2025-07-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3282,7 +3282,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-08-01T00:00:00",
     "training_rows": 4744,
-    "fitted_at_utc": "2026-11-10T16:42:07.716972+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:51.396561+00:00",
     "refit_forecast_origin": "2025-08-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -3301,7 +3301,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-09-02T00:00:00",
     "training_rows": 4766,
-    "fitted_at_utc": "2026-11-10T16:42:07.900292+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:51.565403+00:00",
     "refit_forecast_origin": "2025-09-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3320,7 +3320,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-10-10T00:00:00",
     "training_rows": 4788,
-    "fitted_at_utc": "2026-11-10T16:42:08.090059+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:51.748608+00:00",
     "refit_forecast_origin": "2025-10-13T00:00:00",
     "tuned_this_refit": false
   },
@@ -3339,7 +3339,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-11-11T00:00:00",
     "training_rows": 4810,
-    "fitted_at_utc": "2026-11-10T16:42:08.293100+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:51.950654+00:00",
     "refit_forecast_origin": "2025-11-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -3358,7 +3358,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2025-12-11T00:00:00",
     "training_rows": 4832,
-    "fitted_at_utc": "2026-11-10T16:42:08.488161+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:52.123840+00:00",
     "refit_forecast_origin": "2025-12-12T00:00:00",
     "tuned_this_refit": false
   },
@@ -3377,7 +3377,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-01-14T00:00:00",
     "training_rows": 4854,
-    "fitted_at_utc": "2026-11-10T16:42:08.675676+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:52.311405+00:00",
     "refit_forecast_origin": "2026-01-15T00:00:00",
     "tuned_this_refit": false
   },
@@ -3396,7 +3396,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-02-13T00:00:00",
     "training_rows": 4876,
-    "fitted_at_utc": "2026-11-10T16:42:08.869281+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:52.502193+00:00",
     "refit_forecast_origin": "2026-02-24T00:00:00",
     "tuned_this_refit": false
   },
@@ -3415,7 +3415,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-03-25T00:00:00",
     "training_rows": 4898,
-    "fitted_at_utc": "2026-11-10T16:42:09.057627+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:52.701986+00:00",
     "refit_forecast_origin": "2026-03-26T00:00:00",
     "tuned_this_refit": false
   },
@@ -3434,7 +3434,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-04-27T00:00:00",
     "training_rows": 4920,
-    "fitted_at_utc": "2026-11-10T16:42:09.891229+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:53.512329+00:00",
     "refit_forecast_origin": "2026-04-28T00:00:00",
     "tuned_this_refit": true
   },
@@ -3453,7 +3453,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-06-01T00:00:00",
     "training_rows": 4942,
-    "fitted_at_utc": "2026-11-10T16:42:10.068650+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:53.696413+00:00",
     "refit_forecast_origin": "2026-06-02T00:00:00",
     "tuned_this_refit": false
   },
@@ -3472,7 +3472,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-07-02T00:00:00",
     "training_rows": 4964,
-    "fitted_at_utc": "2026-11-10T16:42:10.262308+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:53.879465+00:00",
     "refit_forecast_origin": "2026-07-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3491,7 +3491,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-08-03T00:00:00",
     "training_rows": 4986,
-    "fitted_at_utc": "2026-11-10T16:42:10.455761+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:54.053536+00:00",
     "refit_forecast_origin": "2026-08-04T00:00:00",
     "tuned_this_refit": false
   },
@@ -3510,7 +3510,7 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-09-02T00:00:00",
     "training_rows": 5008,
-    "fitted_at_utc": "2026-11-10T16:42:10.647110+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:54.236246+00:00",
     "refit_forecast_origin": "2026-09-03T00:00:00",
     "tuned_this_refit": false
   },
@@ -3529,8 +3529,27 @@
     "train_start": "2006-01-23T00:00:00",
     "train_end": "2026-10-12T00:00:00",
     "training_rows": 5030,
-    "fitted_at_utc": "2026-11-10T16:42:10.832594+00:00",
+    "fitted_at_utc": "2026-11-18T14:01:54.417681+00:00",
     "refit_forecast_origin": "2026-10-13T00:00:00",
+    "tuned_this_refit": false
+  },
+  {
+    "model": "xgboost",
+    "parameters": {
+      "n_estimators": 300,
+      "max_depth": 2,
+      "learning_rate": 0.025,
+      "min_child_weight": 8,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 3.0
+    },
+    "cv_qlike": 0.3605810013652491,
+    "train_start": "2006-01-23T00:00:00",
+    "train_end": "2026-11-11T00:00:00",
+    "training_rows": 5052,
+    "fitted_at_utc": "2026-11-18T14:01:54.596434+00:00",
+    "refit_forecast_origin": "2026-11-12T00:00:00",
     "tuned_this_refit": false
   }
 ]

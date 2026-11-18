@@ -4,9 +4,9 @@
   "minimum_bars_per_day": 20,
   "overnight_returns_included": false,
   "output_file": "intraday_rv_recent.csv",
-  "rows": 31,
-  "start_date": "2026-09-21T00:00:00",
-  "end_date": "2026-11-10T00:00:00",
-  "sha256": "a24c48b347201a857073eda573f95eafa6c49b77abaeaecf17118a22a274cfd9",
-  "retrieved_or_generated_utc": "2026-11-10T16:00:53.016062+00:00"
+  "rows": 32,
+  "start_date": "2026-09-29T00:00:00",
+  "end_date": "2026-11-18T00:00:00",
+  "sha256": "052a5bebd39b9f72416e392c34dd663cf04cc9cab9ea058906edb8c699a35a5d",
+  "retrieved_or_generated_utc": "2026-11-18T14:01:04.882075+00:00"
 }
